@@ -1,0 +1,322 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 100px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.primary-btn {
+  background-color: #2f5bea;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #2448c8;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.hero-image {
+  width: 45%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #2f5bea;
+}
+
+.nav-btn {
+  background-color: #2f5bea;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-btn:hover {
+  background-color: #2448c8;
+}
+
+.pricing {
+  padding: 80px 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.pricing-desc {
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: #f8f9fc;
+  padding: 40px 30px;
+  border-radius: 16px;
+}
+
+.pricing-card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.price span {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.pricing-card button {
+  background-color: #2f5bea;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background-color: #2448c8;
+}
+
+.pricing-card.featured {
+  background-color: #2f5bea;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured ul li {
+  color: #e5e7eb;
+}
+
+.pricing-card.featured button {
+  background-color: #fff;
+  color: #2f5bea;
+}
+
+
+.pricing-card.featured button:hover{
+    background-color: #e4e7ec;
+}
+
+.cta {
+  padding: 80px 100px;
+  background-color: #2f5bea;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 24px;
+  margin: 0 100px 80px;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #e5e7eb;
+}
+
+.cta button {
+  background-color: #ffffff;
+  color: #2f5bea;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #f3f4f6;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 40px 100px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #2f5bea;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+@media (max-width: 768px){
+    .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .pricing {
+    padding: 60px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 60px 20px;
+    margin: 0  20px 60px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
